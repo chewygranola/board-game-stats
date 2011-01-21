@@ -1,0 +1,9 @@
+{% if game_type_list %}
+	{% for game in game_type_list %}
+		<div><a href="/boardgames/game/{{ game.hyphenated }}/">{{ game.game_type_name }}</a></div>
+	{% endfor %}
+{% else %}
+    <div><a href="/boardgames/standings/">View Player Standings</a></div>
+    <div><a href="/boardgames/game/">View Games</a></div>
+{% endif %}
+

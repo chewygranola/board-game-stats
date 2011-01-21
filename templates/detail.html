@@ -1,0 +1,6 @@
+<h1>{{ game.game_type }} -- {{ game.play_date }}</h1>
+<ul>
+{% for score in game.game_score_set.all %}
+    <li>{{ score.player }} :{{ score.score }}</li>
+{% endfor %}
+</ul>
