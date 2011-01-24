@@ -1,6 +1,6 @@
 {% if game_type_list %}
     {% for game in game_type_list %}
-        <h1>{{ game.game_type }} -- {{ game.play_date }}</h1>
+        <h1>{{ game.game_type }} -- {{ game.play_date }} -- {{ game.id }}</h1>
 			<ol>
 			{% for score in game.game_score_set.all %}
 				<li>{{ score.player }}: {{ score.score }}</li>
