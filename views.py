@@ -1,4 +1,4 @@
-from boardgames.models import Player, Game_Type, Game, Game_Score
+from boardgames.models import Player, Game_Type, Game, Game_Score, Game_Rating
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.shortcuts import render_to_response, get_object_or_404
